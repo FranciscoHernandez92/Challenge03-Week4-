@@ -1,0 +1,16 @@
+<li class="character col">
+  <span class="character__name card-title h4">{{ item.name }}</span>
+  <span class="character__name card-title h4">{{ item.family }}</span>
+  <span class="list-unstyled">{{ item.age }}</span>
+  <span>{{ item.type }}</span>
+  <span>{{ item.isAlive }}</span>
+  <div NgIf="item.show">
+    <span>{{ item.kingdomYears }}</span>
+    <span>{{ item.weapon }}</span>
+    <span>{{ item.skillsRange }}</span>
+    <span>{{ item.lord }}</span>
+    <span>{{ item.serverRange }}</span>
+    <span>{{ item.master }}</span>
+  </div>
+  <span> <button type="button" [value]="item.message">Talk</button></span>
+</li>
