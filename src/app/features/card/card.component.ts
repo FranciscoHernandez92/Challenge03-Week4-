@@ -8,5 +8,9 @@ import { AnyCharacter } from '../../../model/interface';
   templateUrl: './card.component.html',
 })
 export class CardComponent {
-  @Input({ required: true }) item!: AnyCharacter;
+  message!: string;
+  @Input({ required: true }) character!: AnyCharacter;
+  showMessage() {
+    this.message = this.character.message;
+  }
 }
