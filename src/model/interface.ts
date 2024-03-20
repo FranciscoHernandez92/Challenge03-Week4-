@@ -2,7 +2,7 @@ export interface AnyCharacter {
   name: string;
   family: string;
   age: number;
-  type: 'king' | 'fighter' | 'counselor' | 'squire';
+  type: string;
   message: string;
   isAlive: boolean;
   kingdomYears?: number;
